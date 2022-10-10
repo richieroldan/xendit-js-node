@@ -280,7 +280,8 @@ Card.prototype._createAuthentication = function (authenticationData, transaction
     var xenditBaseURL = this._xendit._getXenditURL();
 
     var body = {
-        amount: authenticationData.amount
+        amount: authenticationData.amount,
+        currency: authenticationData.currency
     };
 
     if (transactionMetadata !== null) {
